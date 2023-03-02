@@ -4,6 +4,6 @@ class User < ApplicationRecord
     has_many :comments
 
     def recent_posts
-        Post.where(author_id: 1).order(created_at: :desc).limits(3)
+        Post.where(author_id: id).order(created_at: :desc).limits(3)
       end
 end
