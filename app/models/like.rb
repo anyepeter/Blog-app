@@ -4,7 +4,7 @@ class Like < ApplicationRecord
 
   after_save :likes_counters
 
-private
+  private
 
   def likes_counters
     Post.find(posts_id).increment!(:LikesCounter)
