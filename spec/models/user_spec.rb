@@ -9,7 +9,7 @@ RSpec.describe User, type: :model do
       expect(User.new).to_not be_valid
     end
     it 'Is should valid the post counter' do
-        expect(User.new(name: 'Chendi', posts_counter: 0)).to be_valid
+      expect(User.new(name: 'Chendi', posts_counter: 0)).to be_valid
     end
   end
 end

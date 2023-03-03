@@ -5,7 +5,7 @@ class Post < ApplicationRecord
 
   after_save :update_post_counter
 
-  validates :Title, presence: true, length: { maximum: 250 } 
+  validates :Title, presence: true, length: { maximum: 250 }
   validates :CommentsCounter, :LikesCounter, numericality: { greater_than_or_equal_to: 0 }, allow_nil: false
 
   def recent_comments
