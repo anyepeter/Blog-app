@@ -1,1 +1,30 @@
-<h1>Here is it<h1>
+<section>
+   <div>
+       <img src="<%= @user.photo %>" >
+       <div> <p> <%= @user.name %> </p>
+         <span>Number of post: <%= @user.posts_counter %></span>
+       </div>
+   </div>
+ <br />
+   <div>
+    <span>Bio</span>
+    <p> <%= @user.bio %> </p>
+   </div>
+    
+   <ul> 
+    <% @user.recent_posts.each do |post| %>
+       <li>
+       <a href="users/<%= @user.id %>/posts/<%= post.id %>" >
+       <div>
+       <span>Post <%= post.id %>  </span>
+       <p> <%= post.Title %> </p>
+      </div>
+      </a>
+       </li>
+    <% end %>
+
+    <button>
+        <a href='/users/<%= @user.id%>/posts'>See all posts</a>
+    </button>
+</section>
+
