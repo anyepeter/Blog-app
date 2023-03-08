@@ -1,1 +1,10 @@
 <h1>An articles post</h1>
+<h1> Post Info <h1/>
+   <%= @post.Text %>
+    <p>Comments:
+    <% @post.recent_comments.each do |comment| %>
+    <%= comment.Text %>
+    </p>
+    <p>likes: 
+    </p>
+    <% end %>
