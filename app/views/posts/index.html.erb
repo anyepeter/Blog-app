@@ -1,7 +1,30 @@
+<section>
 <h1>Here is a list of posts for a given user</h1>
-
+<div>
+<img src="<%= @posts.photo%>">
 <div>
 <h1 class="user-name" ><%= @posts.name %> </h1>
-<span class="user-posts">Number of Posts : <%= @posts.length %> </span>
+<span class="user-posts">Number of Posts : <%= @posts.posts.length %> </span>
+</div>
 </div>
 
+<ul>
+  <% @posts.posts.each_with_index do |element, index| %>
+    <li>
+    <a>
+    <h2> Post # <%= index + 1 %> </h2>
+    <h3><%= element.Title %></h3>
+<p><%= element.Text %></p>
+<span class="post-info">Comments: <%= element.comments.length %>, Likes: <%= element.likes.length %></span>
+    </a>
+    </li>
+    <div>
+<% element.recent_comments.each do |comment| %>
+<li>
+<span><%= comment.author.name %> : </span>
+<span> <%= comment.text %> </span>
+</li>
+<% end %>
+  <% end %>
+</ul>
+</section>
