@@ -1,1 +1,21 @@
+<section class="indexpage">
 <h1>An articles post</h1>
+   <div >
+      <div class="text-content">
+      <h2>Post #<%= @post.id%> By <%= @post.author.name %></h2>
+      <span class="post-info">Comments: <%= @post.comments.length %>, Likes: <%= @post.likes.length %></span>
+      </div>
+      <h3><%= @post.Title%></h3>
+      <p><%= @post.Text%>
+   </div>
+   <div>
+    <ul>
+         <% @post.comments.each do |comment| %>
+       <li class="link">
+       <span><%= comment.author.name %> : </span>
+        <span> <%= comment.text %> </span>
+       </li>
+       <% end %>
+    </ul>
+   </div>
+</section>

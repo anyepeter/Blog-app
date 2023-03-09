@@ -13,3 +13,61 @@
  *= require_tree .
  *= require_self
  */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.indexpage {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: auto;
+  gap: 2rem;
+  padding-top: 4rem;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  min-width: 300px;
+  list-style: none;
+}
+
+.profile-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  text-decoration: none;
+  color: black;
+}
+
+.image {
+  width: 100px;
+  height: 100px;
+}
+
+.header {
+  font-size: 45px;
+}
+
+.biopage {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.text-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.link {
+  list-style-type: none;
+}

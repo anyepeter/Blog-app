@@ -1,1 +1,31 @@
-<h1>Here is it<h1>
+<section class="indexpage">
+   <div class="profile-content">
+       <img class="image"  src="<%= @user.photo%>" >
+       <div> <p> <%= @user.name %> </p>
+         <span>Number of post: <%= @user.posts.length %></span>
+       </div>
+   </div>
+ <br />
+   <div class="biopage">
+    <span>Bio</span>
+    <p> <%= @user.bio %> </p>
+   </div>
+    
+   <ul class="profile"> 
+    <% @user.recent_posts.each_with_index do |post, index| %>
+       <li>
+       <a class="profile-content" href="<%= @user.id %>/posts/<%= post.id %>" >
+       <div>
+       <span>Post #<%= index + 1 %>  </span>
+       <p> <%= post.Text %> </p>
+      </div>
+      <span class="post-info">Comments: <%= post.comments.length %>, Likes: <%= post.likes.length %></span>
+      </a>
+       </li>
+    <% end %>
+      </ul>
+    <button>
+        <a href='/users/<%= @user.id%>/posts'>See all posts</a>
+    </button>
+</section>
+

@@ -1,1 +1,14 @@
-<h1>Here is a list of Users<h1/>
+<section class="indexpage">
+<h1 class="header">Here is a list of Users<h1/>
+<ul class="profile">
+<% @users.each do |person| %>
+    <li><a class="profile-content" href = "users/<%= person.id %>">
+    <img class="image" src='<%= person.photo %>' />
+    <div>
+        <h2><%= person.name %></h2>
+        <span>Number of posts: <%= person.posts.length %> </span>
+    </div>
+    </a></li>
+ <% end %>
+</ul>
+ </section>

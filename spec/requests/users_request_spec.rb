@@ -18,7 +18,7 @@ RSpec.describe 'Users', type: :request do
   end
 
   describe 'GET /users/:id' do
-    before(:example) { get '/users/12' }
+    before(:example) { get '/users/1' }
 
     it 'returns http success' do
       expect(response).to have_http_status(:success)
@@ -26,10 +26,6 @@ RSpec.describe 'Users', type: :request do
 
     it 'renders the :show template' do
       expect(response).to render_template(:show)
-    end
-
-    it 'display header in the body response' do
-      expect(response.body).to include('Here is it')
     end
   end
 end
