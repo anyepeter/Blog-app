@@ -11,7 +11,7 @@
 <ul>
   <% @posts.posts.each_with_index do |element, index| %>
     <li>
-    <a>
+    <a href="posts/<%= element.id %>">
     <h2> Post # <%= index + 1 %> </h2>
     <h3><%= element.Title %></h3>
 <p><%= element.Text %></p>
