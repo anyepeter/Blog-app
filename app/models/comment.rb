@@ -5,10 +5,9 @@ class Comment < ApplicationRecord
   after_save :comment_counter
 
   def author_comments(post_id)
-    comments = Comment.joins(:users, :posts)
-                      .select('comments.text', 'users.name')
-                      .where(posts: {id: post_id})
-    return comments
+    Comment.joins(:users, :posts)
+      .select('comments.text', 'users.name')
+      .where(posts: { id: post_id })
   end
 
   private
