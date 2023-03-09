@@ -1,14 +1,14 @@
-<section>
+<section class="indexpage">
 <h1>Here is a list of posts for a given user</h1>
-<div>
-<img src="<%= @posts.photo%>">
+<div class="profile-content">
+<img class="image" src="<%= @posts.photo%>">
 <div>
 <h1 class="user-name" ><%= @posts.name %> </h1>
 <span class="user-posts">Number of Posts : <%= @posts.posts.length %> </span>
 </div>
 </div>
 
-<ul>
+<ul class="profile">
   <% @posts.posts.each_with_index do |element, index| %>
     <li>
     <a href="posts/<%= element.id %>">
@@ -17,12 +17,13 @@
 <p><%= element.Text %></p>
 <span class="post-info">Comments: <%= element.comments.length %>, Likes: <%= element.likes.length %></span>
     </a>
-    </li>
+    
     <div>
 <% element.recent_comments.each do |comment| %>
-<li>
+<p>
 <span><%= comment.author.name %> : </span>
 <span> <%= comment.text %> </span>
+</p>
 </li>
 <% end %>
   <% end %>
