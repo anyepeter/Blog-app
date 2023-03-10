@@ -1,0 +1,7 @@
+<section>
+  <%= form_with model: post, scope: :post, method: :post, url: user_posts_path do |f| %>
+    <%= f.text_field :Title %>
+    <%= f.text_area :Text %>
+    <%= f.submit %>
+    <% end %>
+</section>
