@@ -1,0 +1,8 @@
+<h1>New comment</h1>
+<section>
+  <%= form_with model:comment, scope: :comment, method: :post, locals: true, url: user_post_comments_path do |f| %>
+    <%= f.text_field :text %>
+    <%= f.submit %>
+    <% end %>
+</section>
+
