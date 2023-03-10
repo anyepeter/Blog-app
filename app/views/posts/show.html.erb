@@ -17,5 +17,15 @@
        </li>
        <% end %>
     </ul>
+    <button>
+    <a href='/users/<%= @post.author.id%>/posts/<%= @post.id %>/comments/new'>Add a comment</a>
+    </button>
+    
+    <button>
+    <%= form_with model: @like, scope: :like, method: :post, locals: true, url:"./#{@post.id}/likes" do |f| %>
+        <%= f.submit %>
+        <% end %>
+    </button>
+
    </div>
 </section>

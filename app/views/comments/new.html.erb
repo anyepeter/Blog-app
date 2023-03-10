@@ -1,0 +1,13 @@
+
+<section class="indexpage">
+<h1>New comment</h1>
+  <%= form_with model:comment, scope: :comment, method: :post, locals: true, url: user_post_comments_path do |f| %>
+    <div class="form">
+    <p> Text:
+    <%= f.text_field :text %>
+    </p>
+    <%= f.submit %>
+    <% end %>
+    </div>
+</section>
+

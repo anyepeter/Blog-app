@@ -1,0 +1,14 @@
+<section class="indexpage">
+<h1>Create a new post </h1>
+  <%= form_with model: post, scope: :post, method: :post, url: user_posts_path do |f| %>
+    <div class="form">
+    <p> <span>Title</span>
+    <%= f.text_field :Title %>
+    </p>
+    <p class="context_area"><span>Text</span>
+    <%= f.text_area :Text %>
+    </p>
+    <%= f.submit %>
+    <% end %>
+    </div>
+</section>
