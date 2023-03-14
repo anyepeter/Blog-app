@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe 'Users', type: :system do
   describe 'displays all users' do
-    it 'displays all users' do
+    it 'displays link to click' do
       # display a page
       visit users_path
 

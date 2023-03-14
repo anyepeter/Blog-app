@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe 'Posts', type: :system do
- describe 'displays detailed page of a single post' do
+  describe 'displays detailed page of a single post' do
     it 'displays a single post' do
       # navigate to the posts page
       visit user_posts_path(1)
@@ -22,9 +22,9 @@ RSpec.describe 'Posts', type: :system do
       sleep(1)
       click_button('Create Comment')
 
-      #add a like
+      # add a like
       sleep(1)
       click_button('Save Like')
     end
-   end
   end
+end
