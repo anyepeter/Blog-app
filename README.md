@@ -108,8 +108,6 @@ To run tests, run the following command:
 - Twitter: [@anyepeter](https://twitter.com/twitterhandle)
 - LinkedIn: [peterchendi](https://linkedin.com/in/linkedinhandle)
 
-
-
 👤 Nizamudin Ahmadzai
 - GitHub: [@Nizamuddin4493](https://github.com/Nizamuddin4493)
 - Twitter: [@Nizamuddin4493](https://twitter.com/Nizamuddin4493)
@@ -117,7 +115,7 @@ To run tests, run the following command:
 
 👤 Soe Sandar Win
 - GitHub: [@soesandarwin2201](https://github.com/soesandarwin2201)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/soe-sandar-win-softwareengineer/))
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/soe-sandar-win-softwareengineer/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
