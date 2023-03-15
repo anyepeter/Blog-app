@@ -113,4 +113,12 @@ nav ul a {
   font-size: larger;
 }
 
-
+.sign_up{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
