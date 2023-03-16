@@ -26,7 +26,7 @@
         <%= f.submit %>
         <% end %>
     </button>
-   <% if can? :destroy, @post %>
+   <% if can? :destroy, @post %> 
     <%= button_to "Delete a post", user_post_path(@post.author_id, @post.id), method: :delete, data: { turbo: false } %>
   <% end %>
    </div>
