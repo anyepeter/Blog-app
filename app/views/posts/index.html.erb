@@ -16,8 +16,8 @@
     <h3><%= element.Title %></h3>
 <p><%= element.Text %></p>
 <span class="postInfo">Comments: <%= element.comments.length %>, Likes: <%= element.likes.length %></span>
+
     </a>
-    
     <div>
     <h3>Commments</h3>
 <% element.recent_comments.each do |comment| %>
@@ -33,4 +33,6 @@
 <button>
     <a href='/users/<%= @posts.id%>/posts/new'>Create a new post</a>
     </button>
+  
+
 </section>
