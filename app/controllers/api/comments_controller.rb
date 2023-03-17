@@ -5,7 +5,6 @@ class Api::CommentsController < Api::ApplicationController
   end
 
   def create
-    
     @post = Post.find(params[:post_id])
     @comment = Comment.create!(params.require(:comment).permit(:text)
      .merge(author_id: params[:user_id], posts_id: @post.id))
