@@ -17,8 +17,8 @@ class PostsController < ApplicationController
   end
 
   def create
-   post = Post.new(params.require(:post).permit(:Title, :Text)
-    .merge(author: current_user, CommentsCounter: 0, LikesCounter: 0))
+    post = Post.new(params.require(:post).permit(:Title, :Text)
+     .merge(author: current_user, CommentsCounter: 0, LikesCounter: 0))
     respond_to do |format|
       format.html do
         if post.save
@@ -29,7 +29,7 @@ class PostsController < ApplicationController
           render :new, locals: { post: post }
         end
       end
-    end 
+    end
   end
 
   def destroy
