@@ -5,10 +5,10 @@ class Api::CommentsController < Api::ApplicationController
   end
 
   def create
-    @user = current_user
+    
     @post = Post.find(params[:post_id])
     @comment = Comment.create!(params.require(:comment).permit(:text)
-     .merge(author_id: @user.id, posts_id: @post.id))
+     .merge(author_id: params[:user_id], posts_id: @post.id))
     if @comment.save
       render json: @comment, status: :created
     else
