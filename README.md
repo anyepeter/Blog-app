@@ -124,8 +124,8 @@ To run tests, run the following command:
 ## 🔭 Future Features <a name="future-features"></a>
 
 
-- [ ] **[Make the code more dynamic]**
-- [ ] **[Implment front-end version]**
+- [ ] **[Add admin dashboard]**
+- [ ] **[Email comfairmation]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
