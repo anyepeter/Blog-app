@@ -2,7 +2,7 @@ databases:
   - name: postgres
     ipAllowList: []
     databaseName: postgres_yv6h
-    user: postgres
+    user: peter
 
 services:
   - type: web
