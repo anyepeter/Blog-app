@@ -1,7 +1,7 @@
 databases:
   - name: postgres
     ipAllowList: []
-    databaseName: Blog_app
+    databaseName: postgres_yv6h
     user: postgres
 
 services:
