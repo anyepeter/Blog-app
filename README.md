@@ -145,7 +145,6 @@ Feel free to check the [issues page](https://github.com/anyepeter/Blog-app/issue
 
 Give a ⭐️ if you like this project and how we managed to build it!
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ACKNOWLEDGEMENTS -->
 
