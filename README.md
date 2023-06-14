@@ -19,7 +19,7 @@
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
-<!-- PROJECT DESCRIPTION -->
+<!-- PROJECT  -->
 
 # 📖 [Blog App] <a name="about-project"></a>
 
