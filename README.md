@@ -28,7 +28,6 @@
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack
-- Server
 - Database
 <!-- Features -->
 
